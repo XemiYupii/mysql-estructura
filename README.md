@@ -9,3 +9,7 @@ PIZZERIA
 YOUTUBE
 
 ![youtube](https://user-images.githubusercontent.com/120043339/226586341-78c7c8e2-fc05-4f9e-92d9-9afa3465e163.png)
+
+SPOTIFY
+
+![Spotify](https://user-images.githubusercontent.com/120043339/226664875-3df2d50f-0889-41e2-b3cd-b0f312323b1a.png)
