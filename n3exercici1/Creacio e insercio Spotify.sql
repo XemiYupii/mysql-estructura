@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `Spotify`.`Usuaris` (
 ENGINE = InnoDB;
 
 INSERT INTO Usuaris VALUES (1,'premium','gemma86@gmail.com','gemma140686','Xemi_Yupii','1986-06-14','D','Catalunya',08014),
-						   (2,'free','toni74@gmail.com','jassik27','tonikvicius','1974-07-26','H','Catalunya',08014),
+			   (2,'free','toni74@gmail.com','jassik27','tonikvicius','1974-07-26','H','Catalunya',08014),
                            (3,'premium','jordi2016@gmail.com','forçabarça','jordi_barça','2016-02-12','H','Catalunya',08014);
 
 -- -----------------------------------------------------
@@ -74,7 +74,7 @@ CREATE TABLE IF NOT EXISTS `Spotify`.`Targetes_Credit` (
 ENGINE = InnoDB;
 
 INSERT INTO Targetes_Credit VALUES (1,123456789,'06/24',123,1),
-								   (2,987654321,'07/27',321,3);
+				   (2,987654321,'07/27',321,3);
 
 -- -----------------------------------------------------
 -- Table `Spotify`.`Subscripcions`
@@ -109,7 +109,7 @@ CREATE TABLE IF NOT EXISTS `Spotify`.`Subscripcions` (
 ENGINE = InnoDB;
 
 INSERT INTO Subscripcions VALUES (1,'2022-05-14','2022-06-14',1,'PayPal',1,null),
-								 (2,'2023-01-27','2023-02-27',3,'credit',null,2);
+				 (2,'2023-01-27','2023-02-27',3,'credit',null,2);
 
 -- -----------------------------------------------------
 -- Table `Spotify`.`Pagaments`
@@ -137,7 +137,7 @@ CREATE TABLE IF NOT EXISTS `Spotify`.`Pagaments` (
 ENGINE = InnoDB;
 
 INSERT INTO Pagaments VALUES (1,1,'2022-05-14',9.99,'abc1'),
-							 (2,'2023-01-27',9.99,'abc2',3);
+			     (2,'2023-01-27',9.99,'abc2',3);
 
 -- -----------------------------------------------------
 -- Table `Spotify`.`Playlists`
@@ -160,7 +160,7 @@ CREATE TABLE IF NOT EXISTS `Spotify`.`Playlists` (
 ENGINE = InnoDB;
 
 INSERT INTO Playlists VALUES (1,'favoritas',68,'2023-01-27','activa',null,1),
-							 (2,'top',102,'2023-02-14','activa',null,2);
+			     (2,'top',102,'2023-02-14','activa',null,2);
 
 -- -----------------------------------------------------
 -- Table `Spotify`.`Artistes`
@@ -173,7 +173,7 @@ CREATE TABLE IF NOT EXISTS `Spotify`.`Artistes` (
 ENGINE = InnoDB;
 
 INSERT INTO Artistes VALUES (1,'Spice Girls','iamge.jpg'),
-							(2,'Pet Shop Boys','image.jpg'),
+			    (2,'Pet Shop Boys','image.jpg'),
                             (3,'The Strokes','image.jpg'),
                             (4,'La casa azul','image.jpg'),
                             (5,'Alejandro Sanz','image.jpg'),
@@ -202,7 +202,7 @@ CREATE TABLE IF NOT EXISTS `Spotify`.`Albums` (
 ENGINE = InnoDB;
 
 INSERT INTO Albums VALUES (1,'Spice',1996,'image.jpg',1),
-						  (2,'Spiceworld',1997,'image.jpg',1),
+			  (2,'Spiceworld',1997,'image.jpg',1),
                           (3,'Monkey Business',2020,'image.jpg',2),
                           (4,'Room on fire',2003,'image.jpg',3),
                           (5,'La gran esfera',2019,'image.jpg',4),
@@ -227,7 +227,7 @@ CREATE TABLE IF NOT EXISTS `Spotify`.`Cançons` (
 ENGINE = InnoDB;
 
 INSERT INTO Cançons VALUES(1,'Wannabe','00:02:53',11,1),
-						  (2,'Stop','00:03:24',37,2),
+			  (2,'Stop','00:03:24',37,2),
                           (3,'West end girls','00:04:45',100000,3),
                           (4,'Last nite','00:03:13',384847,4),
                           (5,'La revolucion sexual','00:04:34',337558,5),
@@ -263,8 +263,8 @@ CREATE TABLE IF NOT EXISTS `Spotify`.`Afegir_Cançons_Playlists_Actives` (
 ENGINE = InnoDB;
 
 INSERT INTO Afegir_Cançons_Playlists_Actives VALUES(1,1,'2023-01-03',1),
-												   (1,1,'2023-01-03',2),
-												   (1,1,'2023-01-03',4),
+						   (1,1,'2023-01-03',2),
+						   (1,1,'2023-01-03',4),
                                                    (1,1,'2023-01-03',5),
                                                    (2,2,'2023-01-24',3),
                                                    (1,1,'2023-01-08',6);
@@ -291,7 +291,7 @@ CREATE TABLE IF NOT EXISTS `Spotify`.`Artistes_Artistes_Relacionats` (
 ENGINE = InnoDB;
 
 INSERT INTO Artistes_Artistes_Relacionats VALUES (1,6),
-												 (2,7),
+						 (2,7),
                                                  (3,8),
                                                  (4,9),
                                                  (5,10);
@@ -331,8 +331,8 @@ CREATE TABLE IF NOT EXISTS `Spotify`.`Preferits` (
 ENGINE = InnoDB;
 
 INSERT INTO Preferits VALUES (1,1,2,6),
-							 (1,8,3,4),
-							 (2,3,1,5),
+			     (1,8,3,4),
+			     (2,3,1,5),
                              (2,9,4,1);
 
 SET SQL_MODE=@OLD_SQL_MODE;
