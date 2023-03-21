@@ -32,9 +32,9 @@ CREATE TABLE IF NOT EXISTS `Youtube`.`Usuaris` (
 ENGINE = InnoDB;
 
 INSERT INTO Usuaris VALUES (1,'gemma@gmail.com','gemma86','xemi_yupii','1986-06-14','D','Catalunya',08014),
-						   (2,'toni@gmail.com','toni27','jassik','1974-07-26','H','Catalunya',08014),
-						   (3,'jordi@gmail.com','barça','jordi_mario','2016-02-12','H','Catalunya',08014),
-						   (4,'julia@gmail.com','ponis','juju','2019-07-26','D','Catalunya',08014);
+			   (2,'toni@gmail.com','toni27','jassik','1974-07-26','H','Catalunya',08014),
+			   (3,'jordi@gmail.com','barça','jordi_mario','2016-02-12','H','Catalunya',08014),
+			   (4,'julia@gmail.com','ponis','juju','2019-07-26','D','Catalunya',08014);
 
 -- -----------------------------------------------------
 -- Table `Youtube`.`Videos`
@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `Youtube`.`Videos` (
 ENGINE = InnoDB;
 
 INSERT INTO Videos VALUES (1,'Viatge a Menorca','text',100,'menorca.mpg','00:31:15','text',24,16,1,'privat','2022-08-23 15:00:00',1),
-						  (2,'Partit Basquet Barça','text',200,'barça_madrid.mpg','01:12:35','text',105,80,21,'public','2023-01-19 18:48:02',2);
+			  (2,'Partit Basquet Barça','text',200,'barça_madrid.mpg','01:12:35','text',105,80,21,'public','2023-01-19 18:48:02',2);
 
 -- -----------------------------------------------------
 -- Table `Youtube`.`Etiquetes`
@@ -75,8 +75,8 @@ CREATE TABLE IF NOT EXISTS `Youtube`.`Etiquetes` (
 ENGINE = InnoDB;
 
 INSERT INTO Etiquetes VALUES (1,'viatges'),
-							 (2,'menorca'),
-							 (3,'familia'),
+			     (2,'menorca'),
+			     (3,'familia'),
                              (4,'basquet'),
                              (5,'barça'),
                              (6,'win');
@@ -103,7 +103,7 @@ CREATE TABLE IF NOT EXISTS `Youtube`.`Videos_has_Etiquetes` (
 ENGINE = InnoDB;
 
 INSERT INTO Videos_has_Etiquetes VALUES (1,1),
-										(2,1),
+					(2,1),
                                         (3,1),
                                         (4,2),
                                         (5,2),
@@ -128,7 +128,7 @@ CREATE TABLE IF NOT EXISTS `Youtube`.`Canals` (
 ENGINE = InnoDB;
 
 INSERT INTO Canals VALUES (1,'Viatges','text','2022-02-15',1),
-						  (2,'Partits Basquet','text','2021-04-29',2);
+			  (2,'Partits Basquet','text','2021-04-29',2);
 
 -- -----------------------------------------------------
 -- Table `Youtube`.`Subscripcions`
@@ -152,7 +152,7 @@ CREATE TABLE IF NOT EXISTS `Youtube`.`Subscripcions` (
 ENGINE = InnoDB;
 
 INSERT INTO Subscripcions VALUES (1,1),
-								 (1,2),
+				 (1,2),
                                  (2,1),
                                  (2,2),
                                  (3,1),
@@ -184,7 +184,7 @@ CREATE TABLE IF NOT EXISTS `Youtube`.`Reaccions_Videos` (
 ENGINE = InnoDB;
 
 INSERT INTO Reaccions_Videos VALUES (1,2,'like','2023-03-20 10:51:00'),
-									(3,1,'like','2023-02-12 11:47:23'),
+				    (3,1,'like','2023-02-12 11:47:23'),
                                     (4,1,'like','2023-01-09 15:00:06');
 
 -- -----------------------------------------------------
@@ -206,7 +206,7 @@ CREATE TABLE IF NOT EXISTS `Youtube`.`Playlists` (
 ENGINE = InnoDB;
 
 INSERT INTO Playlists VALUES (1,'viatges 2022','2023-02-12','privada',1),
-							 (2,'partits Barça','2022-12-07','publica',2);
+			     (2,'partits Barça','2022-12-07','publica',2);
 
 -- -----------------------------------------------------
 -- Table `Youtube`.`Videos_has_Playlists`
@@ -230,7 +230,7 @@ CREATE TABLE IF NOT EXISTS `Youtube`.`Videos_has_Playlists` (
 ENGINE = InnoDB;
 
 INSERT INTO Videos_has_Playlists VALUES (1,1),
-										(2,2);
+					(2,2);
 
 -- -----------------------------------------------------
 -- Table `Youtube`.`Comentaris`
@@ -257,7 +257,7 @@ CREATE TABLE IF NOT EXISTS `Youtube`.`Comentaris` (
 ENGINE = InnoDB;
 
 INSERT INTO Comentaris VALUES (1,'text','2023-02-01 08:32:00',1,2),
-							  (2,'text','2023-01-09 10:26:35',2,1),
+			      (2,'text','2023-01-09 10:26:35',2,1),
                               (3,'text','2023-03-12 17:51:23',3,2),
                               (4,'text','2023-01-02 21:32:11',3,1),
                               (5,'text','2023-02-07 00:12:12',4,1);
@@ -286,7 +286,7 @@ CREATE TABLE IF NOT EXISTS `Youtube`.`Reaccions_Comentaris` (
 ENGINE = InnoDB;
 
 INSERT INTO Reaccions_Comentaris VALUES (1,5,'like','2023-03-15 15:23:32'),
-										(1,3,'like','2023-03-15 15:25:21'),
+					(1,3,'like','2023-03-15 15:25:21'),
                                         (4,2,'dislike','2023-03-14 11:34:43');
 
 SET SQL_MODE=@OLD_SQL_MODE;
