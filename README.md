@@ -12,4 +12,5 @@ YOUTUBE
 
 SPOTIFY
 
-![Spotify](https://user-images.githubusercontent.com/120043339/226756628-3536dd6a-672d-4c23-a2f7-c5c5c34b3c0d.png)
+![Spotify](https://user-images.githubusercontent.com/120043339/226756819-30c7232b-b7ba-4ed4-8be6-fa040a491e25.png)
+
